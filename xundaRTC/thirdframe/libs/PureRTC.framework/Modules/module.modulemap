@@ -1,0 +1,6 @@
+framework module PureRTC {
+  umbrella header "PureRTC.h"
+
+  export *
+  module * { export * }
+}
