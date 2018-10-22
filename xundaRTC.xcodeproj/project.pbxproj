@@ -26,9 +26,6 @@
 		9287284D20D817F700AF5508 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727A320D817F700AF5508 /* SVProgressHUD.m */; };
 		9287284E20D817F700AF5508 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727A420D817F700AF5508 /* SVIndefiniteAnimatedView.m */; };
 		9287284F20D817F700AF5508 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 928727A520D817F700AF5508 /* SVProgressHUD.bundle */; };
-		9287285020D817F700AF5508 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 928727A720D817F700AF5508 /* README.md */; };
-		9287285120D817F700AF5508 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 928727A820D817F700AF5508 /* LICENSE.txt */; };
-		9287285220D817F700AF5508 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 928727AA20D817F700AF5508 /* LICENSE */; };
 		9287285320D817F700AF5508 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 928727AB20D817F700AF5508 /* README.md */; };
 		9287285420D817F700AF5508 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727AD20D817F700AF5508 /* UIProgressView+AFNetworking.m */; };
 		9287285520D817F700AF5508 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727AF20D817F700AF5508 /* UIRefreshControl+AFNetworking.m */; };
@@ -46,7 +43,6 @@
 		9287286120D817F700AF5508 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727CC20D817F700AF5508 /* AFNetworkReachabilityManager.m */; };
 		9287286220D817F700AF5508 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 928727CD20D817F700AF5508 /* AFSecurityPolicy.m */; };
 		9287288620D817F700AF5508 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9287281F20D817F700AF5508 /* LICENSE */; };
-		9287288720D817F700AF5508 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9287282020D817F700AF5508 /* README.md */; };
 		9287288820D817F700AF5508 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287282420D817F700AF5508 /* SDWebImageManager.m */; };
 		9287288920D817F700AF5508 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287282520D817F700AF5508 /* SDWebImageDecoder.m */; };
 		9287288A20D817F700AF5508 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287282720D817F700AF5508 /* UIImageView+HighlightedWebCache.m */; };
@@ -863,11 +859,7 @@
 				9280A1C220C76B3E00120E87 /* Assets.xcassets in Resources */,
 				92ABE5652110B54D00BD9E3F /* RegisterView.xib in Resources */,
 				92AE4D0D20E06B4B00B3D3DD /* UUChatTableView.bundle in Resources */,
-				9287285020D817F700AF5508 /* README.md in Resources */,
-				9287285120D817F700AF5508 /* LICENSE.txt in Resources */,
 				92AE4D5B20E06C6F00B3D3DD /* 1.jpeg in Resources */,
-				9287288720D817F700AF5508 /* README.md in Resources */,
-				9287285220D817F700AF5508 /* LICENSE in Resources */,
 				9280A1C020C76B3C00120E87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,8 +1046,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1112,8 +1106,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1137,9 +1133,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y5GHY58G34;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FY72UAG3T4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1149,7 +1145,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xundaRTC/PrefixHeader.pch";
 				INFOPLIST_FILE = xundaRTC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1160,10 +1156,11 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC ";
-				PRODUCT_BUNDLE_IDENTIFIER = gh.flytv.xundaRTC;
+				PRODUCT_BUNDLE_IDENTIFIER = gybtestqq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "453063d8-4c14-465c-a02a-3fc2b07725c5";
-				PROVISIONING_PROFILE_SPECIFIER = ghflytv;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[arch=*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1174,9 +1171,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y5GHY58G34;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FY72UAG3T4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1186,7 +1183,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xundaRTC/PrefixHeader.pch";
 				INFOPLIST_FILE = xundaRTC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1197,10 +1194,10 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC ";
-				PRODUCT_BUNDLE_IDENTIFIER = gh.flytv.xundaRTC;
+				PRODUCT_BUNDLE_IDENTIFIER = gybtestqq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "453063d8-4c14-465c-a02a-3fc2b07725c5";
-				PROVISIONING_PROFILE_SPECIFIER = ghflytv;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
